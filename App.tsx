@@ -55,9 +55,9 @@ export default function App() {
 
       {address && (
         <View style={styles.result}>
-          <Text>Logradouro: {address.logradouro}</Text>
-          <Text>Bairro: {address.bairro}</Text>
-          <Text>Cidade: {address.localidade} - {address.uf}</Text>
+          <Text style={styles.result}>Logradouro: {address.logradouro}</Text>
+          <Text style={styles.result}>Bairro: {address.bairro}</Text>
+          <Text style={styles.result}>Cidade: {address.localidade} - {address.uf}</Text>
         </View>
       )}
 
@@ -72,20 +72,23 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
+    backgroundColor:'black',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    color: 'white',
   },
   input: {
-    width: '100%',
+    width: 300,
     height: 40,
     borderColor: 'gray',
     borderWidth: 1,
     paddingHorizontal: 10,
     marginBottom: 10,
     borderRadius: 5,
+    backgroundColor: 'white',
   },
   error: {
     color: 'red',
@@ -94,5 +97,6 @@ const styles = StyleSheet.create({
   result: {
     marginTop: 20,
     alignItems: 'center',
+    color: 'white',
   },
 });
